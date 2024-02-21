@@ -26,3 +26,29 @@ Arduino library for using micro vibration sensor
 
 
 ## Examples
+
+
+## Contributing
+
+If you want to contribute to this project:
+
+- Report bugs and errors
+- Ask for enhancements
+- Create issues and pull requests
+- Tell others about this library
+- Contribute new protocols
+
+Please read [CONTRIBUTING.md](https://github.com/embinotec/Embinotec_MVS/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+
+### Roadmap
+
+
+## Credits
+
+This library is written by Heiko May for embinotec.
+
+## License
+
+Embinotec_MVS is free software: you can redistribute it and/or  modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+Adafruit_NeoPixel is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the [GNU Lesser General Public License](https://www.gnu.org/licenses/lgpl-3.0.en.html) for more details.
+You should have received a copy of the GNU Lesser General Public License along with NeoPixel.  If not, see [this](https://www.gnu.org/licenses/)
