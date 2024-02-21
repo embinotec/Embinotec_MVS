@@ -87,3 +87,13 @@ void setSensitivity(uint sensitivity){
 uint getSensitivity(){
     return _sensitivity;
 }
+
+/**
+ * @brief Set the Pin object
+ * 
+ * @param pin 
+ * @return ** void 
+ */
+void setPin(int pin){
+    _pin = pin;
+}
