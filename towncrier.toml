@@ -1,0 +1,86 @@
+## One hash for commented code
+## two hashes for comments
+
+[tool.towncrier]
+name = "Embinotec micro vibration sensor"
+
+## Versioning will be used in towncrier build command with option --version="1.0.0"
+# version = 
+
+directory = "doc/rnfragments"
+
+## Where you want your news files to come out. This can be .rst
+## or .md, towncrier's default template works with both.
+filename = "releaseNotes.rst"
+
+## Path to the template for generating the news file.
+# template =
+
+## The magic string that towncrier looks for when considering where the release notes should start.
+#start_string = "<!-- towncrier release notes start -->\n"
+
+## A format string for the title of your project.
+title_format =""
+
+## A format string for rendering the issue/ticket number in newsfiles.
+issue_format = "[#{issue}](https://github.com/twisted/my-project/issues/{issue})"
+
+## The characters used for underlining headers.
+underlines = ["=", "-", "~"]
+
+## Boolean value indicating whether to wrap news fragments to a line length of 79.
+## false by default.
+#wrap = true
+
+## Boolean value indicating whether the template uses bullets for each news fragment.
+## true by default.
+#all_bullets = false
+
+## Boolean value indicating whether to write all news fragments to a single file.
+#single_file =
+
+## The prefix used for orphaned news fragments.
+## "+" by default.
+#orphan_prefix = "+"
+
+## The name of your Python package
+# package = "myproject"
+## The path to your Python package.
+## If your package lives in 'src/myproject/', it must be 'src',
+## but if you don't keep your code in a 'src' dir, remove the
+## config option
+# package_dir = "src"
+
+
+
+
+
+[[tool.towncrier.type]]
+directory = "security"
+name = "Security"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "removed"
+name = "Removed"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "deprecated"
+name = "Deprecated"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "added"
+name = "Added"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "changed"
+name = "Changed"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "fixed"
+name = "Fixed"
+showcontent = true
