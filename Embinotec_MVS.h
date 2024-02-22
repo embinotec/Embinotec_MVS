@@ -1,5 +1,5 @@
 /**
- * @file mvs.h
+ * @file Embinotec_MVS.h
  * @author Heiko May (heiko@may-engineering.de)
  * @brief Library for reading a micro vibration sensors MVS1006.01, MVS0608.02, MVS0409.02 from Sensolute aka. B&B Leiterplattenbestückung
  * @version 0.1
@@ -27,10 +27,12 @@ class MVS{
         void disable();
         void setSensitivity();
         uint getSensitivity();
+        uint getOrientation();
     private:
         int _pin;
         int _enablepin;
         uint _sensitivity;
+        uint _orientation;
 }
 
 

@@ -10,7 +10,7 @@
  */
 
 
-#include <mvs.h>
+#include <Embinotec_MVS.h>
 
 
 
@@ -96,4 +96,17 @@ uint getSensitivity(){
  */
 void setPin(int pin){
     _pin = pin;
+}
+
+
+/**
+ * @brief Get the Orientation object
+ * 
+ * Orientation in MVS1006.01 is defined from top up mounting turining through x-axis. -90 to 90 degrees. All other degrees is bottom up.
+ * Orientation will be calcualted with every rest longer three times detection cycle.
+ * 
+ * @return uint orientation value; 
+ */
+uint getOrientation(){
+    return _orientation;
 }
