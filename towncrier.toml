@@ -2,7 +2,7 @@
 ## two hashes for comments
 
 [tool.towncrier]
-name = "Embinotec micro vibration sensor"
+#name = "Embinotec micro vibration sensor"
 
 ## Versioning will be used in towncrier build command with option --version="1.0.0"
 # version = 
@@ -11,7 +11,7 @@ directory = "doc/rnfragments"
 
 ## Where you want your news files to come out. This can be .rst
 ## or .md, towncrier's default template works with both.
-filename = "releaseNotes.rst"
+filename = "doc/build/releaseNotes.rst"
 
 ## Path to the template for generating the news file.
 # template =
@@ -23,7 +23,7 @@ filename = "releaseNotes.rst"
 title_format =""
 
 ## A format string for rendering the issue/ticket number in newsfiles.
-issue_format = "[#{issue}](https://github.com/twisted/my-project/issues/{issue})"
+issue_format = "[#{issue}](https://github.com/embinotec/embinotec_mvs/issues/{issue})"
 
 ## The characters used for underlining headers.
 underlines = ["=", "-", "~"]
@@ -51,13 +51,24 @@ underlines = ["=", "-", "~"]
 ## config option
 # package_dir = "src"
 
+## ----------- Sections ---------------
+## towncrier supports splitting fragments into multiple sections, each with its own news of fragment types.
+## name: The name of the section.
+## path: The path to the directory containing the news fragments for this section, relative to the configured directory. Use "" for the root directory.
 
+#[[tool.towncrier.section]]
+#name = "Main Platform"
+#path = ""
 
+#[[tool.towncrier.section]]
+#name = "Secondary"
+#path = "secondary"
+## -------------------------------------
 
 
 [[tool.towncrier.type]]
-directory = "security"
-name = "Security"
+directory = "feature"
+name = "Feature"
 showcontent = true
 
 [[tool.towncrier.type]]
@@ -66,21 +77,16 @@ name = "Removed"
 showcontent = true
 
 [[tool.towncrier.type]]
-directory = "deprecated"
-name = "Deprecated"
+directory = "enhancement"
+name = "Enhancement"
 showcontent = true
 
 [[tool.towncrier.type]]
-directory = "added"
-name = "Added"
+directory = "security"
+name = "Security"
 showcontent = true
 
 [[tool.towncrier.type]]
-directory = "changed"
-name = "Changed"
-showcontent = true
-
-[[tool.towncrier.type]]
-directory = "fixed"
-name = "Fixed"
+directory = "misc"
+name = "Misc"
 showcontent = true
