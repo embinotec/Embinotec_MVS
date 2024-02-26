@@ -9,8 +9,8 @@
  * 
  */
 
-#ifndef MVS_H
-#define MVS_H
+#ifndef EMBINOTEC_MVS_H
+#define EMBINOTEC_MVS_H
 
 #include <Arduino.h>
 
@@ -37,4 +37,4 @@ class MVS{
 
 
 
-#endinf //MVS_H
+#endif //MVS_H
